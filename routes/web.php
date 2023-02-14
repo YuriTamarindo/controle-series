@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/serie', [Seriescontroladas::class, 'index']);
 
 Route::get('/serie/criar', [Seriescontroladas::class, 'create']);
+
+Route::post('/serie/salvar', [Seriescontroladas::class, 'store']);
+
+
